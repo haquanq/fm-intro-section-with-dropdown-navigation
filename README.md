@@ -1,33 +1,33 @@
-## Frontend Mentor - Testimonials grid section solution
+# Frontend Mentor - Intro section with dropdown navigation solution
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### The challenge
+## The challenge
 
 - No access to design files, attempt pixel-perfect
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
+- View the optimal layout for the content depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-### Solution
+## Solution
 
-- Built with: `HTML` `CSS`
+- Built with: `HTML` `CSS` `JS`
 - Mobile-first workflow
-
-:link: [`Solution Link`](https://www.frontendmentor.io/solutions/pixel-perfect-with-html-and-css-6aDYE3MWi2) :link: [`Live Site Link`](https://haquanq.github.io/frontendmentor-testimonials-grid-section)
+- Accessible menu with arrow keys navigation
 
 ![](./.docs/design/desktop-design.jpg)
 
-## Working in `fm-testimonials-grid-section` repository
+# Working in `fm-intro-section-with-dropdown-navigation` repository
 
-### Clone this project to your machine
+## Clone this project to your machine
 
-Make sure you have Git installed in your system, open new terminal, run the following command:
+Make sure you have Git + NodeJS installed in your system, open new terminal, run the following command:
 
 ```
-git clone https://github.com/haquanq/fm-testimonials-grid-section.git
+git clone https://github.com/haquanq/fm-intro-section-with-dropdown-navigation.git
 ```
 
 Then, run `npm install` to install all dependencies.
@@ -36,7 +36,7 @@ Then, run `npm install` to install all dependencies.
 npm install
 ```
 
-### Development workflow
+## Development workflow
 
 In terminal, run `npm run dev` to start development server:
 
