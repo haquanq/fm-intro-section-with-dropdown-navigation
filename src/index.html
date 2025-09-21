@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="nav__home-link" href="" aria-label="Homepage" aria-current="page">
+        <img class="nav__logo" src="./assets/images/logo.svg" alt="" />
+      </a>
+      <button class="nav__menu-btn" type="button" aria-label="Mobile menu">
+        <span class="nav__menu-btn--line"></span>
+        <span class="nav__menu-btn--line"></span>
+        <span class="nav__menu-btn--line"></span>
+      </button>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <button class="nav__submenu-btn" type="button" aria-expanded="false" aria-controls="features-submenu">
+              <span class="nav__submenu-btn--text">Features</span>
+              <svg
+                class="nav__submenu-btn--icon"
+                aria-hidden="true"
+                focusable="false"
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path stroke="currentColor" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <ul class="nav__submenu-list nav__submenu-list--features" id="features-submenu">
+              <li class="nav__submenu-item">
+                <a class="nav__submenu-link" href="">
+                  <img class="nav__submenu-link--icon" src="./assets/icons/icon-todo.svg" alt="" />
+                  <span class="nav__submenu-link--text">Todo List</span>
+                </a>
+              </li>
+              <li class="nav__submenu-item">
+                <a class="nav__submenu-link" href="">
+                  <img class="nav__submenu-link--icon" src="./assets/icons/icon-calendar.svg" alt="" />
+                  <span class="nav__submenu-link--text">Calendar</span>
+                </a>
+              </li>
+              <li class="nav__submenu-item">
+                <a class="nav__submenu-link" href="">
+                  <img class="nav__submenu-link--icon" src="./assets/icons/icon-reminders.svg" alt="" />
+                  <span class="nav__submenu-link--text">Reminders</span>
+                </a>
+              </li>
+              <li class="nav__submenu-item">
+                <a class="nav__submenu-link" href="">
+                  <img class="nav__submenu-link--icon" src="./assets/icons/icon-planning.svg" alt="" />
+                  <span class="nav__submenu-link--text">Planning</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <button class="nav__submenu-btn" type="button" aria-expanded="false" aria-controls="company-submenu">
+              <span class="nav__submenu-btn--text">Company</span>
+              <svg
+                class="nav__submenu-btn--icon"
+                aria-hidden="true"
+                focusable="false"
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path stroke="currentColor" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+            <ul class="nav__submenu-list nav__submenu-list--company" id="company-submenu">
+              <li class="nav__submenu-item"><a class="nav__submenu-link" href="">History</a></li>
+              <li class="nav__submenu-item"><a class="nav__submenu-link" href="">Our Team</a></li>
+              <li class="nav__submenu-item"><a class="nav__submenu-link" href="">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="">Careers</a></li>
+          <li class="nav__item"><a class="nav__link" href="">About</a></li>
+        </ul>
+        <div class="nav__account">
+          <a class="nav__account-btn nav__account-btn--login" href="">Login</a>
+          <a class="nav__account-btn nav__account-btn--register" href="">Register</a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <section class="intro">
+        <picture class="intro__image">
+          <source srcset="./assets/images/image-hero-desktop.png" media="(min-width: 54em)" />
+          <img src="./assets/images/image-hero-mobile.png" alt="" />
+        </picture>
+        <div class="intro__content">
+          <h1 class="intro__title">Make remote work</h1>
+          <p class="intro__description">
+            Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+            productivity soar.
+          </p>
+          <a class="intro__cta-btn" href="">Learn more</a>
+          <figure class="intro__clients">
+            <figcaption class="sr-only">Our clients</figcaption>
+            <ul class="intro__clients-list">
+              <li class="intro__clients-item">
+                <span class="sr-only">Databiz</span>
+                <img src="./assets/images/client-databiz.svg" alt="" />
+              </li>
+              <li class="intro__clients-item">
+                <span class="sr-only">Audiophile</span>
+                <img src="./assets/images/client-audiophile.svg" alt="" />
+              </li>
+              <li class="intro__clients-item">
+                <span class="sr-only">Meet</span>
+                <img src="./assets/images/client-meet.svg" alt="" />
+              </li>
+              <li class="intro__clients-item">
+                <span class="sr-only">Maker</span>
+                <img src="./assets/images/client-maker.svg" alt="" />
+              </li>
+            </ul>
+          </figure>
+        </div>
+      </section>
+    </header>
+    <main></main>
+
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>

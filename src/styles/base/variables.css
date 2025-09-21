@@ -1,0 +1,38 @@
+:root {
+    --color-white: hsl(0, 0%, 98%);
+    --color-gray: hsl(0, 0%, 41%);
+    --color-black: hsl(0, 0%, 8%);
+
+    --shadow-sm: 0 25px 40px 8px rgba(0, 0, 0, 10%);
+
+    --font-main: "Epilogue", system-ui, sans-serif;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    --text-sm: 0.875rem;
+    --text-sm-2: 0.9375rem;
+    --text-base: 1rem;
+    --text-md: 1.125rem;
+    --text-lg: 2.25rem;
+    --text-xl: 3rem;
+    --text-xl-4: 4rem;
+    --text-xl-8: 5rem;
+
+    --leading-none: 1;
+    --leading-heading-1: calc(1em + 0.0625rem);
+    --leading-paragraph: 1.625rem;
+
+    --tracking-heading-1: -0.01em;
+    --tracking-body: 0.004em;
+
+    --rounded-full: 9999px;
+    --rounded-lg: 0.875rem;
+
+    --focus-outline-width: 3px;
+    --focus-outline-offset: 3px;
+    --focus-outline-color: var(--color-black);
+    --focus-outline-style: dashed;
+}
+
+@custom-media --tablet (min-width: 54em);
+@custom-media --laptop (min-width: 64em);

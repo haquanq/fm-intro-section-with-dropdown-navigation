@@ -1,45 +1,91 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
+## Frontend Mentor - Intro Section With Dropdown Navigation Solution
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## The challenge
+<p>
+  <a href="https://www.frontendmentor.io/solutions/accessible-menu-with-dropdown-section-w-html---css-flexbox---js-bdGhOmZFJD">
+    <img
+      alt="Solution post"
+      src="https://img.shields.io/badge/Frontendmentor-blue?label=Solution%20on"
+    /></a>
+  <a href="https://haquanq-frontendmentor.github.io/intro-section-with-dropdown-navigation/">
+    <img
+      alt="Live demo"
+      src="https://img.shields.io/badge/Demo-teal?label=Live"
+    /></a>
+  <a href="./LICENSE"
+    ><img
+      allt="MIT License"
+      src="https://img.shields.io/badge/MIT-blue?label=license"
+  /></a>
+</p>
 
-- No access to design files, attempt pixel-perfect
+## Table of Contents
 
-Users should be able to:
+- [Project Overview](#sunrise-project-overview)
+- [Tech Stack and Approach](#stars-tech-stack-and-approach)
+- [Local Development](#leaves-local-development)
+- [Deployment](#maple_leaf-deployment)
+
+## :sunrise: Project Overview
+
+### Challenge Requirements
 
 - View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-## Solution
+### Status
 
-- Built with: `HTML` `CSS` `JS`
-- Mobile-first workflow
-- Accessible menu with arrow keys navigation
+Accessibility
 
-![](./.docs/design/desktop-design.jpg)
+- [x] Responsive accross different screen sizes
+- [x] Interactive elements have clear focus indicator
 
-# Working in `fm-intro-section-with-dropdown-navigation` repository
+### Preview (Desktop)
 
-## Clone this project to your machine
+![](./docs/design/desktop-design-empty.jpg)
 
-Make sure you have Git + NodeJS installed in your system, open new terminal, run the following command:
+## :stars: Tech Stack and Approach
+
+### Built With
+
+- **HTML5** – Semantic structure
+- **CSS Grid & Flexbox** – Layout
+- **PostCSS** – Nested rules, custom media queries, future CSS features, minification
+- **Stylelint** – CSS linting, code style consistency
+- **TypeScript** - Interactivity and application logic
+- **Vite** - Fast development server, production build and easy configuration
+
+### Approach
+
+- Mobile-first workflow for better performance on smaller devices
+- Accessibility guided by [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
+
+## :leaves: Local Development
+
+### Prerequisites
+
+Install the following:
+
+- Git (latest version)
+- Node.js (latest LTS recommended)
+- pnpm (latest version)
+
+### Setup
 
 ```
-git clone https://github.com/haquanq/fm-intro-section-with-dropdown-navigation.git
+git clone https://github.com/haquanq-frontendmentor/intro-section-with-dropdown-navigation.git
+cd intro-section-with-dropdown-navigation
+pnpm install
 ```
 
-Then, run `npm install` to install all dependencies.
+### Start Development Server
 
 ```
-npm install
+pnpm dev
 ```
 
-## Development workflow
+## :maple_leaf: Deployment
 
-In terminal, run `npm run dev` to start development server:
-
-```
-npm run dev
-```
+Deployed to Github Pages via Github Actions (manually triggered).

@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: var(--leading-none);
+    font-family: var(--font-main);
+    font-weight: var(--font-medium);
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    min-height: 100vh;
+
+    &[modal-opened] {
+        overflow: hidden;
+
+        &::before {
+            --bg: rgba(0, 0, 0, 65%);
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: var(--bg);
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    letter-spacing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    color: var(--color-black);
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus,
+a:focus,
+input:focus {
+    outline-offset: var(--focus-outline-offset);
+    outline-width: var(--focus-outline-width);
+    outline-style: var(--focus-outline-style);
+    outline-color: var(--focus-outline-color);
+}
+
+@supports selector(:focus-visible) {
+    button:focus,
+    a:focus,
+    input:focus {
+        outline: none;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible {
+        outline-offset: var(--focus-outline-offset);
+        outline-width: var(--focus-outline-width);
+        outline-style: var(--focus-outline-style);
+        outline-color: var(--focus-outline-color);
+    }
+}
